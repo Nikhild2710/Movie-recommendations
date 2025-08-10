@@ -47,9 +47,9 @@ import os; os.kill(os.getpid(), 9)
   -Predict test; report RMSE
 
 Results (this run)
-Method	Metric	Score
-User–User Cosine	RMSE	~1.0700
-SVD	RMSE	0.8831
+_Method_	         _Metric_	   _Score_
+User–User Cosine	RMSE	      ~1.0700
+SVD	            RMSE	      0.8831
 
 **SVD reduced RMSE** from **~1.07 → 0.883**
 
