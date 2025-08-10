@@ -49,7 +49,7 @@ import os; os.kill(os.getpid(), 9)
 Results (this run)
 _Method_	         _Metric_	   _Score_
 User–User Cosine	RMSE	      ~1.0700
-SVD	            RMSE	      0.8831
+SVD	               RMSE	      0.8831
 
 **SVD reduced RMSE** from **~1.07 → 0.883**
 
