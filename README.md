@@ -36,6 +36,7 @@ Cosine compares observed overlaps between users.
 SVD learns latent factors (hidden taste dimensions) and generalizes to unseen user–movie pairs, so predictions are tighter.
 
 Notebook structure
+
 1.Session Starter (Colab + Drive/Kaggle setup)
 2.(Optional) TMDB content prep
 3.User–User CF (cosine) — RMSE
@@ -43,7 +44,9 @@ Notebook structure
 5.Results table
 
 Credits
+
 1.MIT-licensed work referenced.
+
 2.Datasets: GroupLens MovieLens, TMDB.
 
 License
