@@ -10,32 +10,6 @@ A practical comparison between:
 
 Evaluated with **RMSE** on the **same train/test split**.
 
-## Datasets
-- **MovieLens 20M**: `rating.csv`, `movie.csv`  
-- **(Optional) TMDB 5k**: `tmdb_5000_movies.csv`, `tmdb_5000_credits.csv` (used for content features)
-
-> Datasets are *not* in this repo. The notebook loads from your Google Drive or downloads via Kaggle.
-
-## Run in Colab
-
-### Option A — Use your Google Drive (fast after first setup)
-1. Put CSVs in `MyDrive/movie-recs-data/`:
-   - `rating.csv`, `movie.csv`
-   - (optional) `tmdb_5000_movies.csv`, `tmdb_5000_credits.csv`
-2. Open the notebook via the badge above.
-3. Run the **Session Starter** cell (mounts Drive, loads CSVs).
-
-### Option B — Download from Kaggle (no Drive needed)
-The notebook includes a Kaggle block that downloads MovieLens/TMDB.  
-Upload your `kaggle.json` when prompted. (Do **not** commit it to GitHub.)
-
-### If SVD import fails in a fresh Colab
-Run this one-time **environment fix** cell at the top; it restarts the runtime:
-```python
-!pip -q install numpy==1.26.4 scikit-surprise==1.1.3
-import os; os.kill(os.getpid(), 9)
-
-
 **Methods in this repo**
 1.User–User CF (cosine on mean-centered ratings)
   -Build user×item matrix from train
@@ -69,4 +43,32 @@ Credits
 2.Datasets: GroupLens MovieLens, TMDB.
 
 License
-MIT for code in this repo. Datasets must be obtained from their original sources under their terms.
+MIT for code in this repo. Datasets must be obtained from their original sources under their
+
+## Datasets
+- **MovieLens 20M**: `rating.csv`, `movie.csv`  
+- **(Optional) TMDB 5k**: `tmdb_5000_movies.csv`, `tmdb_5000_credits.csv` (used for content features)
+
+> Datasets are *not* in this repo. The notebook loads from your Google Drive or downloads via Kaggle.
+
+## Run in Colab
+
+### Option A — Use your Google Drive (fast after first setup)
+1. Put CSVs in `MyDrive/movie-recs-data/`:
+   - `rating.csv`, `movie.csv`
+   - (optional) `tmdb_5000_movies.csv`, `tmdb_5000_credits.csv`
+2. Open the notebook via the badge above.
+3. Run the **Session Starter** cell (mounts Drive, loads CSVs).
+
+### Option B — Download from Kaggle (no Drive needed)
+The notebook includes a Kaggle block that downloads MovieLens/TMDB.  
+Upload your `kaggle.json` when prompted. (Do **not** commit it to GitHub.)
+
+### If SVD import fails in a fresh Colab
+Run this one-time **environment fix** cell at the top; it restarts the runtime:
+```python
+!pip -q install numpy==1.26.4 scikit-surprise==1.1.3
+import os; os.kill(os.getpid(), 9)
+
+
+ terms.
