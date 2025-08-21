@@ -1,3 +1,35 @@
+**Goal**. Learn and showcase an end-to-end movie recommender, comparing simple heuristics with a learned model.
+
+**Datasets**.
+
+TMDB 5k: tmdb_5000_movies.csv, tmdb_5000_credits.csv (for content features)
+MovieLens 20M: rating.csv, movie.csv (for collaborative filtering & evaluation)
+Data is loaded from Google Drive (/content/drive/MyDrive/movie-recs-data) or via the Kaggle download cell. No data is in the repo.
+
+**Methods implemented.**
+
+- Popularity baseline – Top-N by vote_count (TMDB)
+- Content-based – TF-IDF over genres + keywords + tagline + top 3 cast + director (TMDB) with cosine similarity
+- User–User CF (cosine) – Mean-centered ratings, K-neighbor prediction
+- Matrix Factorization (SVD, Surprise) – Learned latent factors
+
+Evaluation (same split).
+
+- Per-user train/test split (20% holdout)
+- RMSE on held-out ratings
+_(Content/popularity are similarity/top-N demos; RMSE is computed for CF & SVD.)_
+
+**How to run.**
+
+If surprise import fails in Colab, run the Env Fix cell at the top once (restarts runtime).
+Run Session Starter (mount Drive + load CSVs).
+Run User–User CF RMSE, then SVD RMSE.
+See the final Results cell.
+My latest results (example).
+
+User–User CF RMSE ≈ 1.0788
+SVD RMSE ≈ 0.8831
+
 # Movie Recommendation System — CF (Cosine) vs SVD
 **Built by Nikhil Dulipala**
 
