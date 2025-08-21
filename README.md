@@ -11,21 +11,25 @@ A practical comparison between:
 Evaluated with **RMSE** on the **same train/test split**.
 
 **Methods in this repo**
-1.User–User CF (cosine on mean-centered ratings)
+
+1. User–User CF (cosine on mean-centered ratings)
   -Build user×item matrix from train
   -Predict rating for (u, m) via similarity-weighted neighbor ratings
   -Evaluate RMSE vs test
 
-2.SVD (Surprise)
+
+2. SVD (Surprise)
   -SVD(n_factors=100, random_state=42) on the same train
   -Predict test; report RMSE
 
-Results (this run)
+Results
+**SVD reduced RMSE** from **~1.07 → 0.883**
+
 _Method_	         _Metric_	   _Score_
 User–User Cosine	RMSE	      ~1.0700
 SVD	               RMSE	      0.8831
 
-**SVD reduced RMSE** from **~1.07 → 0.883**
+
 
 Why SVD helps
 Cosine compares observed overlaps between users.
