@@ -38,9 +38,13 @@ SVD learns latent factors (hidden taste dimensions) and generalizes to unseen us
 Notebook structure
 
 1.Session Starter (Colab + Drive/Kaggle setup)
+
 2.(Optional) TMDB content prep
+
 3.User–User CF (cosine) — RMSE
+
 4.SVD — RMSE
+
 5.Results table
 
 Credits
