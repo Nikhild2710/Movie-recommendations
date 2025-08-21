@@ -19,16 +19,10 @@ Evaluation (same split).
 - RMSE on held-out ratings
 _(Content/popularity are similarity/top-N demos; RMSE is computed for CF & SVD.)_
 
-**How to run.**
 
-If surprise import fails in Colab, run the Env Fix cell at the top once (restarts runtime).
-Run Session Starter (mount Drive + load CSVs).
-Run User–User CF RMSE, then SVD RMSE.
-See the final Results cell.
-My latest results (example).
-
-User–User CF RMSE ≈ 1.0788
-SVD RMSE ≈ 0.8831
+**Outcome:**
+- User–User CF RMSE ≈ 1.0788
+- SVD RMSE ≈ 0.8831
 
 # Movie Recommendation System — CF (Cosine) vs SVD
 **Built by Nikhil Dulipala**
